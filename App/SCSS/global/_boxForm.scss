@@ -1,0 +1,48 @@
+.boxForm {
+  position: relative;
+
+  width: 100%;
+  max-width: 34em;
+  height: 45em;
+  background-color: var(--BOX-COLOR);
+
+  margin: 8% auto;
+  border-radius: 10px;
+  padding: 2em;
+
+  .toggleBox {
+    position: relative;
+    width: 20em;
+    height: 4em;
+    box-shadow: 0 0 8px rgb(194, 201, 206);
+
+    margin: 0 auto;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+
+    .toggleButton {
+      position: relative;
+      height: 100%;
+      padding-inline: 2em;
+
+      text-transform: capitalize;
+      font-weight: 700;
+      background: none;
+      cursor: pointer;
+    }
+    .toggle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      z-index: -1;
+
+      background: linear-gradient(90deg, var(--BTN-COLOR1), var(--BTN-COLOR2));
+
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}
