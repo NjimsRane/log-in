@@ -1,0 +1,54 @@
+.form {
+  margin-top: 12em;
+  font-family: var(--FONT-FAMILY);
+  position: absolute;
+  width: 75%;
+  transition: var(--TRANSITION);
+  p {
+    padding-block: 1.5em;
+
+    .user {
+      background: none;
+      width: 100%;
+      border-bottom: 1px solid #999;
+      padding-block: 0.5em;
+      font-size: 1.5rem;
+    }
+  }
+  .checkBox {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    label {
+      color: #777;
+      font-size: 1rem;
+    }
+    input {
+      accent-color: teal;
+      cursor: pointer;
+    }
+    a {
+      margin-left: 4em;
+      color: blue;
+    }
+  }
+  .btn {
+    margin: 0 2.5em;
+
+    .btnSubmit {
+      background: linear-gradient(90deg, var(--BTN-COLOR1), var(--BTN-COLOR2));
+      padding: 0.6em 5em;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--BOX-COLOR);
+      border-radius: 30px;
+    }
+  }
+}
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}

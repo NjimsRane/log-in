@@ -37,7 +37,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/photo1.jpg);
@@ -52,9 +51,18 @@ body {
   max-width: 34em;
   height: 45em;
   background-color: var(--BOX-COLOR);
-  margin: 8% auto;
+  margin: 5em auto;
   border-radius: 10px;
   padding: 2em;
+  overflow: hidden;
+  /*************************************
+    toggble box 
+  *************************************
+  */
+  /*************************************
+    links section 
+  *************************************
+  */
 }
 .boxForm .toggleBox {
   position: relative;
@@ -63,8 +71,6 @@ body {
   box-shadow: 0 0 8px rgb(194, 201, 206);
   margin: 0 auto;
   border-radius: 30px;
-  cursor: pointer;
-  z-index: 1;
 }
 .boxForm .toggleBox .toggleButton {
   position: relative;
@@ -74,6 +80,8 @@ body {
   font-weight: 700;
   background: none;
   cursor: pointer;
+  transition: var(--TRANSITION);
+  font-family: var(--FONT-FAMILY);
 }
 .boxForm .toggleBox .toggle {
   position: absolute;
@@ -81,8 +89,72 @@ body {
   left: 0;
   height: 100%;
   width: 50%;
-  z-index: -1;
   background: linear-gradient(90deg, var(--BTN-COLOR1), var(--BTN-COLOR2));
   border-radius: 30px;
+  transition: var(--TRANSITION);
+}
+.boxForm .links {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.boxForm .links img {
+  width: 2.5em;
+  margin-top: 1em;
+}
+
+.form {
+  margin-top: 12em;
+  font-family: var(--FONT-FAMILY);
+  position: absolute;
+  width: 75%;
+  transition: var(--TRANSITION);
+}
+.form p {
+  padding-block: 1.5em;
+}
+.form p .user {
+  background: none;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  padding-block: 0.5em;
+  font-size: 1.5rem;
+}
+.form .checkBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.form .checkBox label {
+  color: #777;
+  font-size: 1rem;
+}
+.form .checkBox input {
+  accent-color: teal;
   cursor: pointer;
+}
+.form .checkBox a {
+  margin-left: 4em;
+  color: blue;
+}
+.form .btn {
+  margin: 0 2.5em;
+}
+.form .btn .btnSubmit {
+  background: linear-gradient(90deg, var(--BTN-COLOR1), var(--BTN-COLOR2));
+  padding: 0.6em 5em;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--BOX-COLOR);
+  border-radius: 30px;
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 450px;
 }/*# sourceMappingURL=main.css.map */

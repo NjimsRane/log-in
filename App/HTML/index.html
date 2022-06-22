@@ -19,6 +19,97 @@
           <button class="toggleButton login">login</button>
           <button class="toggleButton register">register</button>
         </div>
+        <!-- link to social medias -->
+        <div class="links">
+          <a href="https://www.gmail.com" target="_blank">
+            <img src="/Images/gmail.png" alt="gmail logo " />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="/Images/2504792.png" alt="facebook logo " />
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="/Images/733579.png" alt="instagram logo " />
+          </a>
+        </div>
+        <!-- login form -->
+
+        <form action="#" class="form" id="login">
+          <p>
+            <label aria-label="user name">
+              <input
+                type="text"
+                name="userName"
+                placeholder="User Name"
+                required
+                class="user"
+              />
+            </label>
+          </p>
+          <p>
+            <label aria-label="user passsword">
+              <input
+                type="password"
+                name="userPassword"
+                placeholder="Enter Passsword"
+                required
+                class="user"
+              />
+            </label>
+          </p>
+          <p class="checkBox">
+            <input type="checkbox" name="rememberPass" id="checkPass" />
+            <label for="checkPass"> Remember password </label>
+
+            <label>
+              <a href="#">forget password?</a>
+            </label>
+          </p>
+          <p class="btn">
+            <button type="submit" class="btnSubmit">Log In</button>
+          </p>
+        </form>
+        <form action="#" class="form" id="register">
+          <p>
+            <label aria-label="user name">
+              <input
+                type="text"
+                name="userName"
+                placeholder="User Name"
+                required
+                class="user"
+              />
+            </label>
+          </p>
+          <p>
+            <label aria-label="user email">
+              <input
+                type="text"
+                name="userMail"
+                placeholder="Enter Mail"
+                required
+                class="user"
+              />
+            </label>
+          </p>
+          <p>
+            <label aria-label="user passsword">
+              <input
+                type="password"
+                name="userPassword"
+                placeholder="Enter Passsword"
+                required
+                class="user"
+              />
+            </label>
+          </p>
+          <p class="checkBox">
+            <input type="checkbox" name="rememberPass" id="checkPass" />
+            <label for="checkPass">Agree with term &amp; conditions </label>
+          </p>
+          <p class="btn">
+            <button type="submit" class="btnSubmit">Register</button>
+          </p>
+        </form>
       </div>
     </div>
     <script src="/App/JS/main.js"></script>
